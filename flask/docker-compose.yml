@@ -1,0 +1,12 @@
+version: '3'
+services:
+  http-flask-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-host-name/docker-u-name/image-name:tag-no
+    # environment:
+      # - BUILD_ENV=dev
+    ports:
+      - 4200:4200
+    # command: /bin/bash -c "sleep 7 && go run main.go"
